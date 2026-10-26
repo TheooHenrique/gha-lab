@@ -1,18 +1,18 @@
-name: ola
+# name: ola
 
-on: 
-  [push, workflow_dispatch]
+# on: 
+#   [push, workflow_dispatch]
 
-jobs: 
-  saudacao:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Oi
-        run: echo "Saudações ${{ github.actor }}! Você iniciu essa pipeline com a ação $GITHUB_EVENT_NAME"
+# jobs: 
+#   saudacao:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Oi
+#         run: echo "Saudações ${{ github.actor }}! Você iniciu essa pipeline com a ação $GITHUB_EVENT_NAME"
 
-      - name: Infos
-        run: |
-          PVERSION=$(python --version)
-          echo "O OS do runner é: $ImageOS"
-          echo "A versão do python é $PVERSION"
+#       - name: Infos
+#         run: |
+#           PVERSION=$(python --version)
+#           echo "O OS do runner é: $ImageOS"
+#           echo "A versão do python é $PVERSION"
 
