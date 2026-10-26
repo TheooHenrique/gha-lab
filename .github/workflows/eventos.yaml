@@ -15,4 +15,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: teste
-      - run: echo "testando"
+        run: echo "testando"
