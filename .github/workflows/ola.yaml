@@ -1,0 +1,20 @@
+name: ola
+
+on: 
+  [push, workflow_dispatch]
+
+env:
+  MINHA_DATA: python --version
+
+jobs: 
+  saudacao:
+    runs-on: ubuntu-latest
+    setps:
+      - name: Oi
+        run: echo "Saudações ${{ github.actor }}! Você iniciu essa pipeline com a ação ${{  }}"
+
+      - name: Infos
+        run: |
+          echo "O OS do runner é: $ImageOS"
+          echo "A versão do python é ${{  }}"
+
