@@ -7,8 +7,8 @@ on:
         default: "turma"
 
   push:
-  paths:
-    - 'src/**'
+    paths:
+      - 'src/**'
 
 jobs:
   teste:
