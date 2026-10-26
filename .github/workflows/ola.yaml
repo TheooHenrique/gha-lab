@@ -6,7 +6,7 @@ on:
 jobs: 
   saudacao:
     runs-on: ubuntu-latest
-    setps:
+    steps:
       - name: Oi
         run: echo "Saudações ${{ github.actor }}! Você iniciu essa pipeline com a ação ${{  }}"
 
