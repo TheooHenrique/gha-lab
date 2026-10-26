@@ -3,9 +3,6 @@ name: ola
 on: 
   [push, workflow_dispatch]
 
-env:
-  MINHA_DATA: python --version
-
 jobs: 
   saudacao:
     runs-on: ubuntu-latest
@@ -15,6 +12,7 @@ jobs:
 
       - name: Infos
         run: |
+          PVERSION=$(python --version)
           echo "O OS do runner é: $ImageOS"
-          echo "A versão do python é ${{  }}"
+          echo "A versão do python é $PVERSION"
 
