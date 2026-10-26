@@ -1,12 +1,12 @@
 name: eventos
 
 on: 
-  workflow_dispatch
+  workflow_dispatch:
     inputs:
       nome:
         default: "turma"
 
-  push
+  push:
   paths:
     - 'src/**'
 
