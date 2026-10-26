@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Oi
-        run: echo "Saudações ${{ github.actor }}! Você iniciu essa pipeline com a ação ${{  }}"
+        run: echo "Saudações ${{ github.actor }}! Você iniciu essa pipeline com a ação $GITHUB_EVENT_NAME"
 
       - name: Infos
         run: |
